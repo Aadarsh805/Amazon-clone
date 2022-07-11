@@ -12,7 +12,7 @@ const Home = () => {
         alt="banner"
         className="home__img"
       />
-      
+
       {/* Deals row */}
       <div className="deals__row">
         <div className="deal__card">
@@ -58,7 +58,7 @@ const Home = () => {
           </div>
         </div>
         <div className="deal__card">
-        <h3>Upgrade your home | Amazon Brands & more</h3>
+          <h3>Upgrade your home | Amazon Brands & more</h3>
           <div className="deals">
             <Deal
               title="Smart LED TVs"
@@ -80,7 +80,7 @@ const Home = () => {
           <a href="#">Shop now</a>
         </div>
         <div className="deal__card">
-        <h3>Up to 70% off | Styles for Men</h3>
+          <h3>Up to 70% off | Styles for Men</h3>
           <div className="deals">
             <Deal
               title="Clothing"
@@ -103,39 +103,41 @@ const Home = () => {
         </div>
       </div>
 
-
       {/* Prime Row */}
       <div className="prime__row">
         <div className="prime__card">
           <h3>Prime Video: Recommended for you</h3>
           <span>The Boys - Season 1</span>
-          <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/88a0f6bf4f033bc2fe2e35d0b08b022abf3da66766580dcbc863bb4ca725a740._RI_V_TTW_.jpg" alt="" />
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/88a0f6bf4f033bc2fe2e35d0b08b022abf3da66766580dcbc863bb4ca725a740._RI_V_TTW_.jpg"
+            alt=""
+          />
           <a href="#">Start watching on Prime Video</a>
         </div>
         <div className="deal__card">
-        <h3>Upgrade your home | Amazon Brands & more</h3>
+          <h3>Upgrade your home | Amazon Brands & more</h3>
           <div className="deals">
             <Deal
-              title="Smart LED TVs"
-              image="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/TV_1x._SY116_CB627443840_.jpg"
+              title="Fresh"
+              image="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Fresh._SY116_CB431401553_.jpg"
             />
             <Deal
-              title="Appliances"
-              image="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonSmallBusinessDay/PrivateBrands/GW20/GW_Desktop_QC_Appliances_1X_V2_3._SY116_CB636581536_.jpg"
+              title="Mobiles"
+              image="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Mobile._SY116_CB431401553_.jpg"
             />
             <Deal
-              title="Furniture"
-              image="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/Furn_1x._SY116_CB627275939_.jpg"
+              title="Fashion"
+              image="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Fashion._SY116_CB431401553_.jpg"
             />
             <Deal
-              title="Kitchen products"
-              image="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/Kitchen_1x._SY116_CB627276315_.jpg"
+              title="Electronics"
+              image="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Electronic._SY116_CB431401553_.jpg"
             />
           </div>
           <a href="#">Shop now</a>
         </div>
         <div className="deal__card">
-        <h3>Upgrade your home | Amazon Brands & more</h3>
+          <h3>Upgrade your home | Amazon Brands & more</h3>
           <div className="deals">
             <Deal
               title="Smart LED TVs"
@@ -154,11 +156,9 @@ const Home = () => {
               image="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW/Kitchen_1x._SY116_CB627276315_.jpg"
             />
           </div>
-          <a href="#">Shop now</a>
+          <a href="#">See more</a>
         </div>
       </div>
-
-
 
       {/* Products Row */}
       <div className="products__row">
@@ -201,7 +201,6 @@ const Home = () => {
           rating={5}
         />
       </div>
-
 
       {/* Books row */}
       <div className="books__row">
