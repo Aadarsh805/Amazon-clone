@@ -1,9 +1,140 @@
-.home__img{
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+.home__img {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     width: 100%;
+    margin-bottom: -150px;
+    z-index: -1;
 }
 
-.home{
+.home {
     max-width: 1450px;
     margin-inline: auto;
+}
+
+.products__row {
+    display: flex;
+    margin-inline: 10px;
+}
+
+.books__row {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-inline: 20px;
+    gap: 2.25rem;
+    overflow: overlay;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.books__row::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow {
+    position: absolute;
+    border: none;
+    outline: none;
+    opacity: .3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backArrow {
+    left: 0;
+}
+
+.forwardArrow {
+    right: 0;
+}
+
+.arrow:hover {
+    opacity: .7;
+    transition: .3s ease-in-out;
+}
+
+.deals__row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-inline: 20px;
+}
+
+.deal__card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 21rem;
+    margin-bottom: 2rem;
+    z-index: 2;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.deal__card>a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #007185;
+}
+
+.deals {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.prime__row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.prime__card {
+    background-color: #fff;
+    position: relative;
+    max-height: 22.25rem;
+}
+
+.prime__card h3,
+.prime__card span,
+.prime__card a {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #fff;
+}
+
+.prime__card span {
+    position: absolute;
+    top: 2.5rem;
+    color: #fff;
+}
+
+
+.prime__card a {
+    position: absolute;
+    top: 20rem;
+    z-index: 4;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.prime__card>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prime__card::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .3;
 }
