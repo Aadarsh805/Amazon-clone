@@ -69,8 +69,8 @@
     height: 21rem;
     margin-bottom: 2rem;
     z-index: 2;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: space-around;
+    padding-inline: 20px;
 }
 
 .deal__card>a {
@@ -82,21 +82,23 @@
 .deals {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: .5rem;
+    gap: .75rem;
     align-items: center;
     justify-content: center;
+    margin-top: -1rem;
 }
 
 .prime__row {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .prime__card {
     background-color: #fff;
     position: relative;
-    max-height: 22.25rem;
+    max-height: 21rem;
 }
 
 .prime__card h3,
@@ -106,6 +108,7 @@
     top: 1rem;
     left: 1rem;
     color: #fff;
+    
 }
 
 .prime__card span {
