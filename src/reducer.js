@@ -1,5 +1,6 @@
 export const initialState = {
   cart: [],
+  user: null,
 };
 
 export const subTotal = (cart) => cart?.reduce((acc, curr) => curr.price + acc, 0)
@@ -23,6 +24,11 @@ const reducer = (state, action) => {
         ...state,
         cart: newCart,
       };
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user
+      }
     default:
       return state;
   }

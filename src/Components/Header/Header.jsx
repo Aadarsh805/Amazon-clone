@@ -3,12 +3,17 @@ import { Link } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useStateValue } from "../../StateProvider";
+import { auth } from "../../firebase";
 
 const Header = () => {
 
-  const [{cart}] = useStateValue()
-  console.log(cart  )
-
+  const [{cart, user}] = useStateValue()
+  const login = () => {
+    if(user) {
+      auth.signOut()
+    }
+  }
+  
   return (
     <nav className="header">
       <Link to="/">
@@ -24,10 +29,10 @@ const Header = () => {
       </div>
 
       <div className="header__nav">
-        <Link to='/login' className="header__nav--link">
-          <div className="header__nav--option">
-            <span className="header__nav--optionLineOne">Hello,</span>
-            <span className="header__nav--optionLineTwo">Sign in</span>
+        <Link to={!user && '/login'} className="header__nav--link">
+          <div onClick={login} className="header__nav--option">
+            <span className="header__nav--optionLineOne">Hello,{user?.email}</span>
+            <span className="header__nav--optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
           </div>
         </Link>
 
