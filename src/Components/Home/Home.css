@@ -71,6 +71,7 @@
     z-index: 2;
     justify-content: space-around;
     padding-inline: 20px;
+    width: 20rem;
 }
 
 .deal__card>a {
@@ -93,6 +94,7 @@
     grid-template-columns: 2fr 1fr 1fr;
     gap: 1rem;
     margin-bottom: 2rem;
+    margin-inline: 1rem;
 }
 
 .prime__card {
@@ -108,7 +110,7 @@
     top: 1rem;
     left: 1rem;
     color: #fff;
-    
+    text-decoration: none;
 }
 
 .prime__card span {
@@ -120,7 +122,7 @@
 
 .prime__card a {
     position: absolute;
-    top: 20rem;
+    top: 17rem;
     z-index: 4;
     color: #fff;
     text-decoration: none;
@@ -140,4 +142,68 @@
     width: 100%;
     background-color: #000;
     opacity: .3;
+}
+
+@media screen and (max-width: 1260px){
+    
+    .deal__card:nth-child(4){
+        display: none;
+    }
+
+    .prime__card{
+        width: 21rem;
+    }
+
+    .prime__card > h3{
+        font-size: 1.1rem;
+        margin-top: .5rem;
+    }
+
+    .prime__card a{
+        top: 18.5rem;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .deal__card{
+        width: 15rem;
+        height: 15rem;
+    }
+
+    
+    .deal__card:nth-child(n + 3){
+        display: none;
+    }
+
+    .prime__card{
+        max-height: 15rem;
+        width: 17.25rem;
+    }
+
+    .prime__card > span{
+        margin-top: 1.5rem;
+        font-size: 14px;
+    }
+
+    .prime__card > h3{
+        font-size: 1.1rem;
+    }
+
+    .prime__card a{
+        top: 12.5rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .prime__card {
+        width: 100%;
+    }
+
+    .prime__row .deal__card{
+        display: none;
+    }
+
+    .prime__row{
+        grid-template-columns: 1fr;
+    }
 }

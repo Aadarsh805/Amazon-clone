@@ -1,7 +1,23 @@
 import "./Product.css";
 import StarRateIcon from "@mui/icons-material/StarRate";
+import {useStateValue} from '../../StateProvider'
 
 const Product = ({ title, image, id, rating, price }) => {
+  const [{cart}, dispatch] = useStateValue();
+  
+  const addToCart = () => {
+    dispatch({
+      type: 'ADD_TO_CART',
+      item: {
+        id,
+        title,
+        image,
+        rating,
+        price
+      }
+    })
+  }
+
   return (
     <div className="product">
       <div className="product__info">
@@ -24,7 +40,7 @@ const Product = ({ title, image, id, rating, price }) => {
         </div>
       </div>
       <img src={image} alt={title} />
-      <button className="product__btn">Add to cart</button>
+      <button onClick={addToCart} className="product__btn">Add to cart</button>
     </div>
   );
 };
