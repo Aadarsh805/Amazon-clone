@@ -164,14 +164,14 @@ const Home = () => {
       <div className="products__row">
         <Product
           id="1"
-          title="Apple MacBook Pro (14-inch, Apple M1 Pro chip with 8‑core CPU and 14‑core GPU, 16GB RAM, 512GB SSD) - Space Gray"
+          title="Apple MacBook Pro (14-inch, Apple M1 Pro chip with 8‑core CPU"
           image="https://m.media-amazon.com/images/I/61vFO3R5UNL._AC_SX522_.jpg"
           price={1999}
           rating={4}
         />
         <Product
           id="2"
-          title="Apple Watch Series 7 [GPS 41mm] Smart Watch w/ Starlight Aluminum Case with Starlight Sport Band. Fitness Tracker, Blood Oxygen & ECG Apps, Always-On Retina Display, Water Resistant"
+          title="Apple Watch Series 7 [GPS 41mm] Smart Watch"
           price={329}
           rating={5}
           image="https://m.media-amazon.com/images/I/71MQd0o+uHL._AC_SX522_.jpg"
@@ -181,7 +181,7 @@ const Home = () => {
       <div className="products__row">
         <Product
           id="3"
-          title="Apple AirPods (2nd Generation) Wireless Earbuds with Lightning Charging Case Included. Over 24 Hours of Battery Life, Effortless Setup. Bluetooth Headphones for iPhone"
+          title="Apple AirPods (2nd Generation) Wireless Earbuds with Lightning Charging Case"
           price={99}
           rating={5}
           image="https://m.media-amazon.com/images/I/7120GgUKj3L._AC_SX522_.jpg"
@@ -195,7 +195,7 @@ const Home = () => {
         />
         <Product
           id="5"
-          title="Apple AirPods Max Wireless Over-Ear Headphones. Active Noise Cancelling, Transparency Mode, Spatial Audio, Digital Crown for Volume Control. Bluetooth Headphones for iPhone - Silver"
+          title="Apple AirPods Max Wireless Over-Ear Headphones. Active Noise Cancelling"
           image="https://images-na.ssl-images-amazon.com/images/I/81thV7SoLZL.__AC_SY445_SX342_QL70_FMwebp_.jpg"
           price={449}
           rating={5}

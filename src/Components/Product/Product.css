@@ -16,6 +16,7 @@
     padding: 20px;
     background-color: #fff;
     z-index: 2;
+    justify-content: space-between;
 }
 
 .product > img{
@@ -41,4 +42,31 @@
     padding: 15px;
     font-weight: 600;
     width: 100%;
+}
+
+
+@media screen and (max-width: 760px){
+    .product > img{
+        width: 4rem;
+        height: 8rem;
+        object-fit: contain;
+        align-self: center;
+    }
+
+    .product{
+        height: 250px;
+        gap: 0;
+    }
+
+    .product__title{
+        font-size: 14px;
+        white-space: nowrap;
+        word-wrap:normal;
+        overflow: hidden;
+        max-width: 10rem;
+    } 
+
+    .product__btn{
+
+    }
 }

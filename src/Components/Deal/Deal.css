@@ -1,24 +1,36 @@
-.deal{
+.deal {
     display: flex;
     flex-direction: column;
     align-items: left;
     gap: 5px;
 }
 
-.deal > span{
+.deal>span {
     font-size: 12px;
 }
 
-.deal > img{
+.deal>img {
     width: 125px;
     max-height: 100px;
     object-fit: contain;
 }
 
-.deal > span{
+
+.deal>span {
     text-size-adjust: 2rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 8rem;
+}
+
+@media screen and (max-width: 760px) {
+    .deal>img {
+        width: 45px;
+    }
+
+    .deal>span {
+        width: 5rem;
+    }
+
 }
