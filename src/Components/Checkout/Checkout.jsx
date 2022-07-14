@@ -2,10 +2,13 @@ import "./Checkout.css";
 import { useStateValue } from "../../StateProvider";
 import { Link } from "react-router-dom";
 import CartProduct from './CartProduct/CartProduct'
+import SubTotal from './SubTotal/SubTotal'
+import { subTotal } from "../../reducer";
 
 const Checkout = () => {
   const [{ cart }, dispatch] = useStateValue();
   return (
+    <div className="wrapper">
     <div className="checkout">
       {cart?.length === 0 ? (
         <div className="emptycart">
@@ -34,7 +37,12 @@ const Checkout = () => {
               />
             ))}
           </div>
+          <p className="amountTotal">SubToal: ${subTotal(cart)}</p>
         </div>
+      )}
+    </div>
+      {cart.length > 0 && (
+            <SubTotal/>
       )}
     </div>
   );

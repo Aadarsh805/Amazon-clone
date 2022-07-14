@@ -1,0 +1,48 @@
+.subtotal {
+    padding: .5rem;
+    background-color: #fff;
+    width: 10rem;
+    margin-right: 2rem;
+}
+
+.subtotal h1 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.eligible {
+    display: flex;
+    align-items: start;
+}
+
+.checkIcon {
+    color: green;
+}
+
+.checkIcon~span {
+    font-size: 10px;
+    margin-bottom: .25rem;
+}
+
+.checkoutBtn {
+    border: none;
+    outline: none;
+    background-color: #ffd814ec;
+    width: fit-content;
+    padding: 5px 1rem;
+    margin-top: .5rem;
+    font-size: 10px;
+    cursor: pointer;
+    opacity: .9;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+@media screen and (min-width: 760px){
+    .subtotal{
+        width: 15rem;
+    }
+
+    
+}
