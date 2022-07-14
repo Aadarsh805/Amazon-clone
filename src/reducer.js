@@ -2,6 +2,9 @@ export const initialState = {
   cart: [],
 };
 
+export const subTotal = (cart) => cart?.reduce((acc, curr) => curr.price + acc, 0)
+
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "ADD_TO_CART":
